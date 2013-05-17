@@ -20,5 +20,16 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  describe 'username' do
+    it 'should respond to username' do
+      user = User.new
+      user.should respond_to(:username)
+    end
+
+    it 'should contain only lower-case alphanumerics, dots, and underscores'
+
+    it 'cannot be null'
+  end
+
 end

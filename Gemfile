@@ -10,11 +10,12 @@ gem 'pg'
 group :development, :test do
   gem 'rspec-rails', '~> 2.13'
   gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'capybara'
 end
 
 group :test do
   gem 'spork', '~> 1.0rc'
-  gem 'guard-spork'
 end
 
 group :development do
