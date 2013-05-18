@@ -25,6 +25,22 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :username, :email, :password, :password_confirmation, :remember_me
+  attr_accessible :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
+
+  # non-devise columns
+  attr_accessible :username, :first_name, :last_name
+
+  validates :username, format: { with: /\A[a-z0-9._]+\z/ }
+  validates :first_name, presence: true, name: true
+  validates :last_name, presence: true, name: true
+
+
+  before_validation :lower_case_username
+
+  private
+
+    def lower_case_username
+      self.username.downcase!
+    end
 end
