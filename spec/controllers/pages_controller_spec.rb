@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 describe PagesController do
-  describe "GET '/'" do
-    # it 'should render the home page' do
-    #   get :root
-    #   response.should 
-    # end
-  end
+  # describe "GET 'index'" do
+  #   it 'should render the home page' do
+  #     get :index
+  #     response.should be_successful
+  #   end
+  # end
 end

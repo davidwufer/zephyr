@@ -11,7 +11,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.13'
   gem 'guard-rspec'
   gem 'guard-spork'
-  gem 'capybara'
+  gem 'capybara', "2.1.0"
+  # gem 'capybara-webkit'
+  gem 'factory_girl_rails'
 end
 
 group :test do

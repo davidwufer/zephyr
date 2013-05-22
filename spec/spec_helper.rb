@@ -85,4 +85,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+
+  # Include the Capybara DSL. This isn't needed when the tests are in spec/features
+  config.include Capybara::DSL
 end

@@ -103,4 +103,11 @@ describe User do
       user.should_not be_valid
     end
   end
+
+  describe 'resume' do
+    it "should respond to 'resume'" do
+      user = User.new
+      user.should respond_to(:resume)
+    end
+  end
 end
