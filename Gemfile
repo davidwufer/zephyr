@@ -13,7 +13,7 @@ group :development, :test do
   gem 'guard-spork'
   gem 'capybara', "2.1.0"
   # gem 'capybara-webkit'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', "~> 4.0"
 end
 
 group :test do

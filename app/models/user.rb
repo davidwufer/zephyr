@@ -18,7 +18,7 @@
 #
 
 class User < ActiveRecord::Base
-  has_one :resume
+  has_many :resumes
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,

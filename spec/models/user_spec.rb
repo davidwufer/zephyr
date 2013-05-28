@@ -104,10 +104,10 @@ describe User do
     end
   end
 
-  describe 'resume' do
-    it "should respond to 'resume'" do
+  describe 'resumes' do
+    it "should respond to 'resumes'" do
       user = User.new
-      user.should respond_to(:resume)
+      user.should respond_to(:resumes)
     end
   end
 end
