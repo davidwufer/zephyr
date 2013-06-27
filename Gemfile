@@ -6,6 +6,11 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'paperclip'
+
+group :production do
+  gem 'aws-sdk'
+end
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.13'

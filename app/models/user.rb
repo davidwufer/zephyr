@@ -15,6 +15,9 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :string(255)
 #  last_sign_in_ip        :string(255)
+#  username               :string(255)      not null
+#  first_name             :string(255)      not null
+#  last_name              :string(255)      not null
 #
 
 class User < ActiveRecord::Base

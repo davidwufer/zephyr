@@ -2,8 +2,8 @@ Zephyr::Application.routes.draw do
 
 
   devise_scope :user do
-    get "sign_in", :to => "devise/sessions#new"
-    get "sign_up", :to => "devise/registrations#new"
+    get "sign_in", :to => "devise/sessions#new", :as => :sign_in
+    get "sign_up", :to => "devise/registrations#new", :as => :sign_up
   end
 
   devise_for :users
